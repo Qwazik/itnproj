@@ -1,0 +1,78 @@
+extends _template-contacts
+
+block main
+	.inner-page
+		.inner-page__header.mb-not
+			.container
+				h2 Контакты
+				p.big Свяжитесь с нами в любое удобное для вас время!
+	.inner-contacts
+		.container.inner-contacts__container
+			.row.inner-contacts__row
+				.col-xs-6.inner-contacts__col
+					.inner-contacts__item
+						.inner-contacts__header Форма обратной связи
+						.inner-contacts__form
+							form(action="")
+								.form-row.clearfix.top
+									input(type="text" placeholder="Ваше имя").fl-left
+									input(type="text" placeholder="Телефон").fl-right
+								.form-row.clearfix
+									input(type="text" placeholder="E-mail")
+								.form-row
+									textarea(placeholder="Сообщение")
+								.form-row.clearfix
+									button(type="submit").btn.btn--blue.fl-left Отправить
+
+				.col-xs-6.inner-contacts__col
+					.inner-contacts__item
+						.inner-contacts__header КОНТАКТная информация
+						ul.inner-contacts__info
+							li
+								span.icon-wrap: i.fa 
+								b Телефон: 
+								span +7 (915) 800 27-65
+							li
+								span.icon-wrap: i.fa.fa-envelope
+								b E-mail: 
+								a(href="#") info@itn-proekt.ru
+							li
+								span.icon-wrap: i.fa 
+								b Адрес: 
+								span г. Брянск ул. Молодой Гвардии д. 64, оф. 128
+					.inner-contacts__item
+						.inner-contacts__header Социальные сети
+						ul.inner-contacts__social.social
+							li: a(href="#").fa.fb 
+							li: a(href="#").vk В
+	//reviews
+	.page__reviews.reviews#reviewsCarousel
+		.container
+			h2 Реальные отзывы клиентов
+			p.big Мы настроены на долгое сотрудничество
+
+			.reviews__list
+				-for(var i=0;i<5;i++)
+					.reviews__item.clearfix
+						.triangle
+						.reviews__person
+							.reviews__photo
+								img(src="img/reviews-photo.jpg", alt="")
+								ul.reviews__control
+									li: a(href="#").prev.fa 
+									li.fl-right: a(href="#").next.fa 
+							.reviews__name
+								span Александр Багиров
+								span Руководитель
+						.reviews__text
+							p К услугам команды itn обращались неоднократно. Радуют сроки исполнения, квалификация специалистов и широта взглядов на графический дизайн. Даже при хорошо укомплектованном техническом задании всегда проявляют инициативу и предлагают что то свое, новое и интересное.
+							a(href="#").fl-right.more Смотреть реальный отзыв
+	//reviews end
+
+
+
+
+
+
+
+

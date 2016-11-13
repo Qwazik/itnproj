@@ -1,0 +1,146 @@
+extends _template
+
+block main
+	.page__bg.main-bg
+		.container
+			.main-bg__text
+				h1.main-bg__header Современные сайты <br> с уникальным  дизайном
+				.main-bg__desc Компания «ITN-Проект» занимается разработкой,<br> продвижением и поддержкой сайтов для корпоративных <br> клиентов и государственных организаций.
+				a(href="#").btn.btn--white Заказать звонок
+	//service
+	.page__service-tabs.service-tabs
+		.container
+			.row.service-tabs__row
+				.col-xs-4.service-tabs__col
+					.service-tabs__item
+						.service-tabs__image: i.fa 
+						span.service-tabs__header 
+							| Создание сайтов
+							span Эффективный подход!
+						span.service-tabs__desc Оказание комплексных услуг по созданию сайтов для корпоративных клиентов и государственных организаций.
+						a(href="#").service-tabs__button.btn.btn--serv Подробнее
+
+				.col-xs-4.service-tabs__col
+					.service-tabs__item
+						.service-tabs__image: i.fa 
+						span.service-tabs__header 
+							| Поддержка сайтов
+							span Новый этап работы!
+						span.service-tabs__desc Комплекс мероприятий для эффективного представления товаров и услуг в сети интернет.
+						a(href="#").service-tabs__button.btn.btn--serv Подробнее
+
+				.col-xs-4.service-tabs__col
+					.service-tabs__item
+						.service-tabs__image: i.fa 
+						span.service-tabs__header 
+							| Развитие сайтов
+							span Опередите конкурентов!
+						span.service-tabs__desc Новая услуга по поддержке корпоративных клиентов и предоставлению услуг ИТ-аутсорсинга на выгодных условиях.
+						a(href="#").service-tabs__button.btn.btn--serv Подробнее
+	//service end
+	//about
+	.page__about.about.color-dark
+		.container
+			.row.about__row
+				.col-xs-6.about__col
+					.about__text
+						h2.light
+							span.blue Компания 
+							| itn-проект
+						p.big.light Сайты для тех, кто хочет быть первым!
+						p Мы предлагаем создание сайтов на постоянно высоком уровне с уникальным дизайном и на различных системах управления сайтом (CMS). С помощью большого набора инструментов наши специалисты делают поисковую оптимизацию сайта, и как следствие продвижение сайтов..
+						a(href="#").btn.btn--bluebd Подробнее
+				.col-xs-6.about__col
+					.about__image
+						img(src="img/about.jpg", alt="").img-responsive
+
+	//about end
+	//our works 
+	.page__works.our-works
+		.container
+			h2 Наши проекты
+			p.big Каждый элемент продумывается до мельчайших деталей
+
+			.our-works__slider#carouselProject
+				ul.our-works__navigation
+					li: a(href="").prev.fa 
+					li: a(href="").next.fa 
+				.our-works__list
+					-for(var i = 0; i<5; i++)
+						.our-works__item
+							.our-works__image
+								img(src="img/project-big-img.jpg", alt="")
+							.our-works__info
+								.our-works__header
+									span.name СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА «СОЮЗ»
+									span Промо сайт
+									.our-works__logo
+										img(src="img/project-logo.png", alt="")
+								.our-works__body
+									p
+										b Задача:
+										span Cделать яркий фирменный стиль и разработать корпоративный сайт.
+									p
+										b Город: 
+										span Брянск	
+									p
+										b Дизайн: 
+										span Эксклюзивный
+									p
+										b Бюджет: 
+										span 228 300 руб.
+								.our-works__footer
+									a(href="#") Подробнее
+									a(href="#") еще проекты
+	//our works end
+	//like it
+	.page__likeit.likeit.color-dark
+		.container
+			.col-xs-7.likeit__left
+				h2.light <span class="blue">Понравился</span> проект?
+				p.big.light Сэкономь недели на поиске - обратись к профи сейчас!
+				p.phone +7 (915) 800 27-65
+				a(href="#").btn.btn--blue Заказать проект
+			.col-xs-5.likeit__right.clearfix
+				ul.features__list.fl-right
+					li.features__item
+						span.fa 
+						span 100% Адаптивности
+					li.features__item
+						span.fa 
+						span Стабильная работа сайтов
+					li.features__item
+						span.fa 
+						span Разнообразие цвета
+					li.features__item
+						span.fa 
+						span Многофункциональность
+					li.features__item
+						span.fa 
+						span Удобство
+
+	//like it end
+	//reviews
+	.page__reviews.reviews#reviewsCarousel
+		.container
+			h2 Реальные отзывы клиентов
+			p.big Мы настроены на долгое сотрудничество
+
+			.reviews__list
+				-for(var i=0;i<5;i++)
+					.reviews__item.clearfix
+						.triangle
+						.reviews__person
+							.reviews__photo
+								img(src="img/reviews-photo.jpg", alt="")
+								ul.reviews__control
+									li: a(href="#").prev.fa 
+									li.fl-right: a(href="#").next.fa 
+							.reviews__name
+								span Александр Багиров
+								span Руководитель
+						.reviews__text
+							p К услугам команды itn обращались неоднократно. Радуют сроки исполнения, квалификация специалистов и широта взглядов на графический дизайн. Даже при хорошо укомплектованном техническом задании всегда проявляют инициативу и предлагают что то свое, новое и интересное.
+							a(href="#").fl-right.more Смотреть реальный отзыв
+	//reviews end
+

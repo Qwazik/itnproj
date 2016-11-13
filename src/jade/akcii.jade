@@ -1,0 +1,21 @@
+extends _template-inner
+
+block main
+	.inner-page
+		.inner-page__header.header-left
+			.container
+				h2 Акции
+				p.big Здесь собраны уникальные предложения только для вас
+		//akcii
+		.akcii
+			.container
+				.row
+					-for (var i = 0; i < 4; i++)	
+						.col-xs-6
+							.akcii__item
+								.akcii__image
+									img(src="img/akcii.jpg", alt="")
+								.akcii__text
+									span.name Лицензии 1С-БИТРИКС
+									span.desc Получите по-настоящему качественные и продуманные решения для бизнеса
+		//akcii end

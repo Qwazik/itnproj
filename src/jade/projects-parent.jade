@@ -1,0 +1,37 @@
+extends _template-inner
+
+block main
+	.inner-page
+		.inner-page__header
+			.container
+				h2 Наши проекты
+				p.big Каждый элемент продумывается до мельчайших деталей
+		//projects
+		.projects
+			.container
+				ul.projects__navigation.blocks-justify
+					li: a(href="projectsAll") Все проекты
+					li: a(href="projectsCorp") Корпоративный сайт
+					li: a(href="projectsEcom") Интернет-магазин
+					li: a(href="projectsNews") Новостной портал
+					li: a(href="projectsLp") Landing page
+					li: a(href="projectsCatalog") Каталог продукции
+				.projects__main
+					include includes/project-item					
+					+projectItem('projectsCorp')
+					+projectItem('projectsEcom')
+					+projectItem('projectsEcom')
+					+projectItem('projectsEcom')
+					+projectItem('projectsEcom')
+					+projectItem('projectsNews')
+					+projectItem('projectsNews')
+					+projectItem('projectsNews')
+					+projectItem('projectsLp')
+					+projectItem('projectsLp')
+					+projectItem('projectsCatalog')
+				.projects__footer
+					a(href="#").projects__more Показать еще
+							
+							
+
+		//projects end

@@ -1,0 +1,119 @@
+extends _template-inner
+
+block main
+	.inner-page
+		.inner-page__header
+			.container
+				h2 Наши проекты
+				p.big Каждый элемент продумывается до мельчайших деталей
+		//projects
+		.inner-project
+			.container
+				.inner-project__image
+					img(src="img/project-item-img.jpg", alt="")
+				.inner-project__info
+					.our-works__logo
+						img(src="img/project-logo.png", alt="")
+					.our-works__body
+						p
+							b Город: 
+							span Брянск	
+						p
+							b Задача: 
+							span Cделать яркий фирменный стиль и разработать корпоративный сайт.
+						p
+							b Оказываемая услуга: 
+							span Разработка сайта с эксклюзивным дизайном
+						p
+							b Бюджет: 
+							span 228 300 руб.
+						p
+							b Срок реализации: 
+							span 28 дней.:
+						p
+							b Адрес сайта:
+							span: a(href="#") Адрес сайта: soyz32.ru
+
+							
+							
+
+		//projects end
+		.content
+			.container
+				p.big Описание проекта
+				p Сегодняшняя жизнь уже не представляется без привычных нам вещей — телефоны, компьютеры, оргтехника, интернет, системы сигнализации и системы видео наблюдения. Основной вид деятельности нашей компании это создание сайтов, продвижение сайтов, поддержка сайта.
+				p Мы предлагаем создание сайтов на постоянно высоком уровне с уникальным дизайном и на различных системах управления сайтом (CMS). С помощью большого набора инструментов наши специалисты делают поисковую оптимизацию сайта, и как следствие продвижение сайтов. Эффективная поддержка сайта достигается за счет практически бесперебойной работы собственного сервера, расположенного на территории Российской Федерации.
+		//project screenshot
+		.container
+			.project-screenshot
+				//main
+				img(src="img/project-screenshot.jpg", alt="")
+				//second
+				img(src="img/project-screenshot.jpg", alt="")
+				img(src="img/project-screenshot.jpg", alt="")
+		//project screenshot end
+	//like it
+	.page__likeit.likeit.color-dark
+		.container
+			.col-xs-7.likeit__left
+				h2.light <span class="blue">Понравился</span> проект?
+				p.big.light Сэкономь недели на поиске - обратись к профи сейчас!
+				p.phone +7 (915) 800 27-65
+				a(href="#").btn.btn--blue Заказать проект
+			.col-xs-5.likeit__right.clearfix
+				ul.features__list.fl-right
+					li.features__item
+						span.fa 
+						span 100% Адаптивности
+					li.features__item
+						span.fa 
+						span Стабильная работа сайтов
+					li.features__item
+						span.fa 
+						span Разнообразие цвета
+					li.features__item
+						span.fa 
+						span Многофункциональность
+					li.features__item
+						span.fa 
+						span Удобство
+
+	//like it end
+	//our works 
+	.page__works.our-works
+		.container
+			h2 Наши проекты
+			p.big Каждый элемент продумывается до мельчайших деталей
+
+			.our-works__slider#carouselProject
+				ul.our-works__navigation
+					li: a(href="").prev.fa 
+					li: a(href="").next.fa 
+				.our-works__list
+					-for(var i = 0; i<5; i++)
+						.our-works__item
+							.our-works__image
+								img(src="img/project-big-img.jpg", alt="")
+							.our-works__info
+								.our-works__header
+									span.name СТОМАТОЛОГИЧЕСКАЯ КЛИНИКА «СОЮЗ»
+									span Промо сайт
+									.our-works__logo
+										img(src="img/project-logo.png", alt="")
+								.our-works__body
+									p
+										b Задача:
+										span Cделать яркий фирменный стиль и разработать корпоративный сайт.
+									p
+										b Город: 
+										span Брянск	
+									p
+										b Дизайн: 
+										span Эксклюзивный
+									p
+										b Бюджет: 
+										span 228 300 руб.
+								.our-works__footer
+									a(href="#") Подробнее
+									a(href="#") еще проекты
+	//our works end

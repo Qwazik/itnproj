@@ -1,0 +1,68 @@
+//footer
+footer.page__footer
+	.main-footer
+		.container
+			.row.menus-block
+				.col-xs-3
+					.footer-menu
+						.footer-menu__header Компания «ITN-ПРОЕКТ»
+						ul.footer-menu__list
+							li: a(href="#") О компании
+							li: a(href="#") Акции
+							li: a(href="#") Услуги
+							li: a(href="#") Проекты 
+							li: a(href="#") Контакты
+				.col-xs-3
+					.footer-menu
+						.footer-menu__header Создание сайтов
+						ul.footer-menu__list
+							li: a(href="#") Корпоративный сайт
+							li: a(href="#") Landing page
+							li: a(href="#") Каталог продукции
+							li: a(href="#") Интернет-магазин	
+				.col-xs-3
+					.footer-menu
+						.footer-menu__header Развитие сайтов
+						ul.footer-menu__list
+							li: a(href="#") Продвижение сайтов
+							li: a(href="#") Контекстная реклама
+							li: a(href="#") Социальный маркетинг
+							li: a(href="#") Аудит сайта
+				.col-xs-3
+					.footer-menu
+						.footer-menu__header КОНТАКТная информация
+						ul.footer-menu__list
+							li: a(href="#") +7 (915) 800 27-65
+							li: a(href="#") info@itn-proekt.ru
+							li: a(href="#") г. Брянск ул. Молодой Гвардии д. 64, оф. 128
+				.col-xs-12.certificates
+					ul.certificates__list.blocks-justify
+						li: img(src="img/sert1.png", alt="")
+						li: img(src="img/sert2.png", alt="")
+						li: img(src="img/sert3.png", alt="")
+						li: img(src="img/sert4.png", alt="")
+						li: img(src="img/sert5.png", alt="")
+						li: img(src="img/sert6.png", alt="")
+	.footer-bottom
+		.container
+			.copyright.fl-left © 2016 «ITN-ПРОЕКТ» Все права защищены.
+			ul.social.fl-right
+				li: a(href="#").fa.fb 
+				li: a(href="#").vk В
+//footer end
+
+//popups
+#popupCallback
+	.inner-contacts__item
+		.inner-contacts__header Форма обратной связи
+		.inner-contacts__form
+			form(action="")
+				.form-row.clearfix.top
+					input(type="text" placeholder="Ваше имя").fl-left
+					input(type="text" placeholder="Телефон").fl-right
+				.form-row.clearfix
+					input(type="text" placeholder="E-mail")
+				.form-row
+					textarea(placeholder="Сообщение")
+				.form-row.clearfix
+					button(type="submit").btn.btn--blue.fl-left Отправить
